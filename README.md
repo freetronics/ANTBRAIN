@@ -46,5 +46,4 @@ this license in plain text format.
 
 CREDITS
 -------
-Designed by Luke Weston (reindeerflotilla@gmail.com) and Jonathan Oxer
-(jon@freetronics.com)
+Designed by Jonathan Oxer (jon@freetronics.com)
