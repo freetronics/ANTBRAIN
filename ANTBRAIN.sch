@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -1610,6 +1610,20 @@ chip</description>
 <text x="-1.54" y="1.605" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.54" y="-2.04" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="1X01">
+<wire x1="1.27" y1="0.635" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" rot="R90"/>
+<text x="1.1938" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
 <package name="1X04">
 <wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
@@ -2374,6 +2388,74 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="2" y="1.2" size="0.4064" layer="27">&gt;Value</text>
 <wire x1="-0.92" y1="1" x2="3.08" y2="1" width="0.2032" layer="21"/>
 </package>
+<package name="1X01_LONGPAD">
+<wire x1="1.016" y1="1.016" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="1.016" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.016" y1="1.016" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.016" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="LUXEON-PAD">
+<smd name="P$1" x="0" y="0" dx="3.9" dy="2.4" layer="1" roundness="25"/>
+<text x="-1.5" y="2" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.5" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SMTSO-256-ET">
+<wire x1="-2.286" y1="1.016" x2="-1.016" y2="2.286" width="1.016" layer="31" curve="-42.075022"/>
+<wire x1="1.016" y1="2.286" x2="2.286" y2="1.016" width="1.016" layer="31" curve="-42.075022"/>
+<wire x1="2.286" y1="-1.016" x2="1.016" y2="-2.286" width="1.016" layer="31" curve="-42.075022"/>
+<wire x1="-1.016" y1="-2.286" x2="-2.286" y2="-1.016" width="1.016" layer="31" curve="-42.075022"/>
+<circle x="0" y="0" radius="1.016" width="0.127" layer="51"/>
+<pad name="P$1" x="0" y="0" drill="3.81" diameter="6.1976"/>
+</package>
+<package name="SMTRA-256-8-6">
+<pad name="P$1" x="-1.9939" y="0" drill="1.3462"/>
+<pad name="P$2" x="1.9939" y="0" drill="1.3462"/>
+<smd name="P$3" x="0" y="0" dx="6.6548" dy="4.3434" layer="1" cream="no"/>
+<text x="1.27" y="2.54" size="0.4064" layer="27">&gt;Value</text>
+<text x="-2.54" y="2.54" size="0.4064" layer="25">&gt;Name</text>
+<rectangle x1="-3.302" y1="0.762" x2="3.302" y2="2.032" layer="31"/>
+<rectangle x1="-1.016" y1="0.508" x2="1.016" y2="0.762" layer="31"/>
+<rectangle x1="-1.016" y1="-1.016" x2="1.016" y2="-0.762" layer="31"/>
+<rectangle x1="-3.302" y1="-2.032" x2="3.302" y2="-0.762" layer="31"/>
+<rectangle x1="-1.016" y1="-0.762" x2="1.016" y2="-0.508" layer="31"/>
+<rectangle x1="2.794" y1="0.508" x2="3.302" y2="0.762" layer="31"/>
+<rectangle x1="2.794" y1="-0.762" x2="3.302" y2="-0.508" layer="31"/>
+<rectangle x1="-3.302" y1="-0.762" x2="-2.794" y2="-0.508" layer="31"/>
+<rectangle x1="-3.302" y1="0.508" x2="-2.794" y2="0.762" layer="31"/>
+</package>
+<package name="1X01NS">
+<pad name="1" x="0" y="0" drill="1.016" rot="R90"/>
+</package>
+<package name="1X01_2_1_MM">
+<pad name="1" x="0" y="0" drill="2.1" rot="R90"/>
+<text x="0.5938" y="2.2288" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.47" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="1X01_CASTELLATED_1.25">
+<pad name="1" x="0" y="0" drill="0.7" diameter="0.9" shape="long" rot="R90"/>
+<text x="1.1938" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="1X01_3MM">
+<pad name="1" x="0" y="0" drill="3" diameter="5" rot="R90"/>
+<text x="-1.4062" y="3.2288" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.47" y="-4.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="1X01_2_6MM">
+<pad name="1" x="0" y="0" drill="2.6" diameter="4"/>
+<text x="-1.4062" y="2.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.47" y="-3.8" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M02">
@@ -2452,6 +2534,16 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="XTL2" x="7.62" y="0" length="short" rot="R180"/>
 <pin name="GND" x="-2.54" y="-10.16" length="short" rot="R90"/>
 <pin name="GND2" x="2.54" y="-10.16" length="short" rot="R90"/>
+</symbol>
+<symbol name="M01">
+<wire x1="3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="3.81" y2="2.54" width="0.4064" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="7.62" y="0" visible="off" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="M04">
 <wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
@@ -2979,6 +3071,95 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <connect gate="G$1" pin="GND2" pad="4"/>
 <connect gate="G$1" pin="XTL1" pad="1"/>
 <connect gate="G$1" pin="XTL2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M01" prefix="JP">
+<description>&lt;b&gt;Header 1&lt;/b&gt;
+Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115).</description>
+<gates>
+<gate name="G$1" symbol="M01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTH_LONGPAD" package="1X01_LONGPAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD" package="LUXEON-PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMTSO-256-ET" package="SMTSO-256-ET">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMTRA-256-8-6" package="SMTRA-256-8-6">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMDNS" package="1X01NS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH" package="1X01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2.1MM" package="1X01_2_1_MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CAST" package="1X01_CASTELLATED_1.25">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3MM" package="1X01_3MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2.6MM" package="1X01_2_6MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4272,8 +4453,8 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP1" library="freetronics-jon" deviceset="M02" device="PTH"/>
 <part name="JP3" library="freetronics-jon" deviceset="M04" device="PTH"/>
-<part name="JP4" library="freetronics-jon" deviceset="M04" device="PTH"/>
-<part name="JP7" library="freetronics-jon" deviceset="M04" device="PTH"/>
+<part name="JP4" library="freetronics-jon" deviceset="M01" device="PTH"/>
+<part name="JP7" library="freetronics-jon" deviceset="M01" device="PTH"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$4" library="SparkFun" deviceset="5V" device=""/>
 <part name="LED1" library="freetronics-jon" deviceset="LED" device="0603" value="BLUE"/>
@@ -4299,12 +4480,15 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <part name="R6" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="470R"/>
 <part name="R7" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="470R"/>
 <part name="U$2" library="SparkFun" deviceset="5V" device=""/>
+<part name="C1" library="freetronics-jon" deviceset="CAP" device="0805" value="10uF"/>
+<part name="C7" library="freetronics-jon" deviceset="CAP" device="0805" value="10uF"/>
+<part name="REG1" library="freetronics" deviceset="V_REG_LM1117" device="SOT89" value="LD1117-SOT89"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="7.62" y="20.32" size="3.048" layer="94">AntBrain 2-Wheel Robot Wars Controller</text>
-<text x="38.1" y="14.478" size="1.778" layer="94">V1.0 (2018-04-07)</text>
+<text x="7.62" y="20.32" size="3.048" layer="94">AntBrain 2-Wheel Robot Controller</text>
+<text x="38.1" y="14.478" size="1.778" layer="94">V1.1 (2018-05-05)</text>
 <text x="7.366" y="9.398" size="1.778" layer="94">(C) 2018 Freetronics Pty Ltd</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Released under the TAPR Open Hardware License: tapr.org/ohl</text>
 <text x="68.326" y="14.478" size="1.778" layer="94">www.freetronics.com.au/antbrain</text>
@@ -4335,7 +4519,8 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <text x="10.16" y="176.53" size="1.778" layer="94">Power Supply</text>
 <text x="10.16" y="85.09" size="1.778" layer="94">H-Bridges</text>
 <wire x1="5.08" y1="88.9" x2="116.84" y2="88.9" width="0.3048" layer="97" style="longdash"/>
-<text x="147.32" y="54.61" size="1.778" layer="94">Flysky Receiver</text>
+<text x="147.32" y="52.07" size="1.778" layer="94">Flysky Receiver
+FS2A 4CH AFHDS</text>
 <wire x1="5.08" y1="116.84" x2="116.84" y2="116.84" width="0.3048" layer="97" style="longdash"/>
 <text x="10.16" y="113.03" size="1.778" layer="94">External LEDs</text>
 </plain>
@@ -4376,8 +4561,8 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <attribute name="VALUE" x="214.884" y="25.019" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND1" gate="1" x="231.14" y="10.16"/>
-<instance part="JP2" gate="G$1" x="25.4" y="33.02" rot="R90"/>
-<instance part="JP5" gate="G$1" x="104.14" y="33.02" rot="R90"/>
+<instance part="JP2" gate="G$1" x="58.42" y="38.1" rot="R90"/>
+<instance part="JP5" gate="G$1" x="71.12" y="38.1" rot="R90"/>
 <instance part="C5" gate="G$1" x="142.24" y="144.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="138.684" y="147.701" size="1.778" layer="95"/>
 <attribute name="VALUE" x="133.604" y="140.081" size="1.778" layer="96"/>
@@ -4390,9 +4575,9 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <instance part="GND2" gate="1" x="160.02" y="121.92"/>
 <instance part="JP1" gate="G$1" x="10.16" y="154.94"/>
 <instance part="JP3" gate="G$1" x="172.72" y="48.26" rot="R270"/>
-<instance part="JP4" gate="G$1" x="172.72" y="33.02" rot="R270"/>
-<instance part="JP7" gate="G$1" x="172.72" y="17.78" rot="R270"/>
-<instance part="GND3" gate="1" x="177.8" y="7.62"/>
+<instance part="JP4" gate="G$1" x="170.18" y="35.56" rot="R270"/>
+<instance part="JP7" gate="G$1" x="170.18" y="20.32" rot="R270"/>
+<instance part="GND3" gate="1" x="170.18" y="10.16"/>
 <instance part="U$4" gate="G$1" x="165.1" y="27.94"/>
 <instance part="LED1" gate="G$1" x="106.68" y="134.62"/>
 <instance part="R1" gate="G$1" x="106.68" y="144.78" rot="R90"/>
@@ -4400,9 +4585,9 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <attribute name="NAME" x="71.12" y="157.48" size="1.778" layer="95"/>
 <attribute name="VALUE" x="68.58" y="147.32" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="63.5" y="144.78" smashed="yes">
-<attribute name="NAME" x="59.69" y="147.701" size="1.778" layer="95"/>
-<attribute name="VALUE" x="58.928" y="141.605" size="1.778" layer="96"/>
+<instance part="C8" gate="G$1" x="60.96" y="144.78" smashed="yes">
+<attribute name="NAME" x="57.15" y="147.701" size="1.778" layer="95"/>
+<attribute name="VALUE" x="56.388" y="141.605" size="1.778" layer="96"/>
 </instance>
 <instance part="GND4" gate="1" x="106.68" y="121.92"/>
 <instance part="U$11" gate="G$1" x="106.68" y="157.48"/>
@@ -4426,6 +4611,18 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <instance part="R6" gate="G$1" x="73.66" y="101.6" rot="R180"/>
 <instance part="R7" gate="G$1" x="30.48" y="101.6" rot="R180"/>
 <instance part="U$2" gate="G$1" x="17.78" y="104.14"/>
+<instance part="C1" gate="G$1" x="55.88" y="55.88" smashed="yes" rot="MR90">
+<attribute name="NAME" x="54.864" y="60.579" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="54.864" y="52.959" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="C7" gate="G$1" x="68.58" y="55.88" smashed="yes" rot="MR90">
+<attribute name="NAME" x="67.564" y="60.579" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="67.564" y="52.959" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="REG1" gate="G$1" x="66.04" y="170.18" smashed="yes">
+<attribute name="NAME" x="60.96" y="172.72" size="1.778" layer="95"/>
+<attribute name="VALUE" x="58.42" y="162.56" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4516,20 +4713,7 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 </segment>
 <segment>
 <pinref part="JP7" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="12.7" x2="170.18" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="10.16" x2="172.72" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="JP7" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="10.16" x2="172.72" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="JP7" gate="G$1" pin="3"/>
-<wire x1="175.26" y1="12.7" x2="175.26" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="10.16" x2="172.72" y2="10.16" width="0.1524" layer="91"/>
-<junction x="172.72" y="10.16"/>
-<pinref part="JP7" gate="G$1" pin="4"/>
-<wire x1="177.8" y1="12.7" x2="177.8" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="10.16" x2="175.26" y2="10.16" width="0.1524" layer="91"/>
-<junction x="175.26" y="10.16"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<junction x="177.8" y="10.16"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -4539,13 +4723,14 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="142.24" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
 <junction x="96.52" y="124.46"/>
-<wire x1="48.26" y1="124.46" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="124.46" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="124.46" x2="60.96" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="124.46" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="147.32" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
 <junction x="76.2" y="124.46"/>
-<wire x1="63.5" y1="142.24" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
-<junction x="63.5" y="124.46"/>
+<wire x1="60.96" y1="142.24" x2="60.96" y2="124.46" width="0.1524" layer="91"/>
+<junction x="60.96" y="124.46"/>
 <wire x1="17.78" y1="154.94" x2="20.32" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="154.94" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
@@ -4556,6 +4741,9 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="96.52" y1="124.46" x2="106.68" y2="124.46" width="0.1524" layer="91"/>
 <junction x="106.68" y="124.46"/>
+<pinref part="REG1" gate="G$1" pin="ADJ"/>
+<wire x1="66.04" y1="162.56" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
+<junction x="66.04" y="124.46"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
@@ -4573,42 +4761,6 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <wire x1="78.74" y1="96.52" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="JP9" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LB" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="B"/>
-<wire x1="30.48" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="43.18" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<label x="25.4" y="43.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LA" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="A"/>
-<wire x1="30.48" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="45.72" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
-<label x="25.4" y="45.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RB" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="B"/>
-<wire x1="96.52" y1="43.18" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="43.18" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="2"/>
-<label x="96.52" y="43.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RA" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="A"/>
-<wire x1="96.52" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="45.72" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
-<label x="96.52" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -4695,19 +4847,7 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <segment>
 <pinref part="JP4" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="27.94" x2="170.18" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="25.4" x2="172.72" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="3"/>
-<wire x1="175.26" y1="27.94" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
-<junction x="172.72" y="25.4"/>
-<pinref part="JP4" gate="G$1" pin="4"/>
-<wire x1="177.8" y1="27.94" x2="177.8" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="25.4" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
-<junction x="175.26" y="25.4"/>
 <wire x1="170.18" y1="25.4" x2="165.1" y2="25.4" width="0.1524" layer="91"/>
-<junction x="170.18" y="25.4"/>
 <pinref part="U$4" gate="G$1" pin="5V"/>
 <wire x1="165.1" y1="25.4" x2="165.1" y2="27.94" width="0.1524" layer="91"/>
 </segment>
@@ -4728,6 +4868,14 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <wire x1="106.68" y1="154.94" x2="106.68" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="154.94" x2="106.68" y2="154.94" width="0.1524" layer="91"/>
 <junction x="106.68" y="154.94"/>
+<pinref part="REG1" gate="G$1" pin="OUT@1"/>
+<wire x1="73.66" y1="167.64" x2="76.2" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="167.64" x2="76.2" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="REG1" gate="G$1" pin="OUT"/>
+<wire x1="76.2" y1="170.18" x2="73.66" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="170.18" x2="86.36" y2="170.18" width="0.1524" layer="91"/>
+<junction x="76.2" y="170.18"/>
+<wire x1="86.36" y1="170.18" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP6" gate="G$1" pin="2"/>
@@ -4819,6 +4967,11 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <label x="149.86" y="73.66" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="B"/>
+<wire x1="30.48" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
+<label x="17.78" y="43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D11_MOSI" class="0">
 <segment>
@@ -4831,6 +4984,11 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <label x="182.88" y="71.12" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="4"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="A"/>
+<wire x1="30.48" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
+<label x="17.78" y="45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D10" class="0">
 <segment>
@@ -4839,9 +4997,9 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <label x="220.98" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="OB"/>
-<wire x1="76.2" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
-<label x="68.58" y="68.58" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="B"/>
+<wire x1="96.52" y1="43.18" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
+<label x="99.06" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D9" class="0">
@@ -4851,9 +5009,9 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <label x="220.98" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="OA"/>
-<wire x1="76.2" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
-<label x="68.58" y="71.12" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="A"/>
+<wire x1="96.52" y1="45.72" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
+<label x="99.06" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D8" class="0">
@@ -4862,22 +5020,12 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <pinref part="IC1" gate="G$1" pin="PB0(ICP)"/>
 <label x="220.98" y="111.76" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="OB"/>
-<wire x1="50.8" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
-<label x="53.34" y="68.58" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="D7" class="0">
 <segment>
 <wire x1="218.44" y1="116.84" x2="236.22" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="PD7(AIN1)"/>
 <label x="220.98" y="116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="OA"/>
-<wire x1="50.8" y1="71.12" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
-<label x="53.34" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D6" class="0">
@@ -5045,14 +5193,18 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <wire x1="33.02" y1="149.86" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="152.4" x2="48.26" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="154.94" x2="63.5" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
 <junction x="48.26" y="154.94"/>
-<wire x1="63.5" y1="154.94" x2="63.5" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="154.94" x2="68.58" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="154.94" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="154.94" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="154.94" x2="68.58" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="REG2" gate="G$1" pin="IN"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<junction x="63.5" y="154.94"/>
-<label x="53.34" y="154.94" size="1.778" layer="95"/>
+<junction x="60.96" y="154.94"/>
+<pinref part="REG1" gate="G$1" pin="IN"/>
+<wire x1="58.42" y1="170.18" x2="55.88" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="170.18" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
+<junction x="55.88" y="154.94"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -5094,57 +5246,101 @@ Adjustable low-dropout voltage regulator available in SOT89 and SOT223 SMT packa
 <wire x1="81.28" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="LOB" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="OB"/>
+<wire x1="50.8" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="68.58" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="55.88" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
+<junction x="53.34" y="55.88"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<label x="53.34" y="63.5" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="LOA" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="OA"/>
+<wire x1="50.8" y1="71.12" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="71.12" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="55.88" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
+<junction x="60.96" y="55.88"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="45.72" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
+<label x="60.96" y="63.5" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="ROB" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="OB"/>
+<wire x1="76.2" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="68.58" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="55.88" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+<junction x="73.66" y="55.88"/>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="45.72" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
+<label x="73.66" y="63.5" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="ROA" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="OA"/>
+<wire x1="76.2" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="71.12" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="55.88" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
+<junction x="66.04" y="55.88"/>
+<pinref part="JP5" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="45.72" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
+<label x="66.04" y="63.5" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,68.58,10.16,RN1D,1,,,,"/>
-<approved hash="101,1,78.74,10.16,RN1D,2,,,,"/>
-<approved hash="102,1,30.48,347.98,+5V,5V,,,,"/>
-<approved hash="102,1,55.88,347.98,+5V,5V,,,,"/>
-<approved hash="102,1,83.82,347.98,+5V,5V,,,,"/>
-<approved hash="102,1,35.56,215.9,+5V,5V,,,,"/>
-<approved hash="102,1,111.76,274.32,+5V,5V,,,,"/>
-<approved hash="102,1,27.94,271.78,+5V,5V,,,,"/>
-<approved hash="102,1,17.78,292.1,+5V,5V,,,,"/>
-<approved hash="102,1,116.84,170.18,+5V,5V,,,,"/>
-<approved hash="102,1,393.7,172.72,+5V,5V,,,,"/>
-<approved hash="102,1,332.74,139.7,+5V,5V,,,,"/>
-<approved hash="102,1,386.08,172.72,+5V,5V,,,,"/>
-<approved hash="102,1,312.42,147.32,+5V,5V,,,,"/>
-<approved hash="102,1,355.6,162.56,+5V,5V,,,,"/>
-<approved hash="102,1,365.76,162.56,+5V,5V,,,,"/>
-<approved hash="102,1,373.38,162.56,+5V,5V,,,,"/>
-<approved hash="102,1,487.68,114.3,+5V,5V,,,,"/>
-<approved hash="102,1,393.7,83.82,+5V,5V,,,,"/>
-<approved hash="102,1,332.74,50.8,+5V,5V,,,,"/>
-<approved hash="102,1,386.08,83.82,+5V,5V,,,,"/>
-<approved hash="102,1,312.42,58.42,+5V,5V,,,,"/>
-<approved hash="102,1,355.6,73.66,+5V,5V,,,,"/>
-<approved hash="102,1,365.76,73.66,+5V,5V,,,,"/>
-<approved hash="102,1,373.38,73.66,+5V,5V,,,,"/>
-<approved hash="102,1,487.68,25.4,+5V,5V,,,,"/>
-<approved hash="102,1,157.48,314.96,+5V,5V,,,,"/>
-<approved hash="102,1,162.56,355.6,+5V,5V,,,,"/>
-<approved hash="102,1,205.74,355.6,+5V,5V,,,,"/>
-<approved hash="102,1,157.48,281.94,+5V,5V,,,,"/>
-<approved hash="104,1,27.94,254,IC4P,VSS,GND,,,"/>
-<approved hash="104,1,27.94,269.24,IC4P,VDD,5V,,,"/>
-<approved hash="104,1,180.34,144.78,IC7,AVCC,5V,,,"/>
-<approved hash="104,1,180.34,111.76,IC7,PAD,GND,,,"/>
-<approved hash="104,1,180.34,116.84,IC7,UGND,USBGND,,,"/>
-<approved hash="104,1,180.34,124.46,IC7,UVCC,USBVCC,,,"/>
-<approved hash="104,1,180.34,137.16,IC7,VCC,5V,,,"/>
-<approved hash="104,1,45.72,129.54,IC8P,V+,5V,,,"/>
-<approved hash="104,1,45.72,114.3,IC8P,V-,GND,,,"/>
-<approved hash="208,1,58.42,215.9,+3V3,out,,,,"/>
-<approved hash="208,1,63.5,215.9,+3V3,sup,,,,"/>
-<approved hash="208,1,30.48,134.62,+3V3,sup,,,,"/>
-<approved hash="208,1,50.8,45.72,+3V3,sup,,,,"/>
-<approved hash="113,1,455.337,134.815,JP1,,,,,"/>
-<approved hash="113,1,455.337,45.9147,JP2,,,,,"/>
-<approved hash="113,1,151.723,253.805,JP7,,,,,"/>
+<approved hash="206,1,83.82,154.94,5V,,,,,"/>
+<approved hash="206,1,83.82,152.4,5V,,,,,"/>
+<approved hash="206,1,73.66,167.64,5V,,,,,"/>
+<approved hash="206,1,73.66,170.18,5V,,,,,"/>
+<approved hash="208,1,165.1,152.4,5V,sup,,,,"/>
+<approved hash="208,1,177.8,172.72,5V,sup,,,,"/>
+<approved hash="208,1,193.04,73.66,5V,sup,,,,"/>
+<approved hash="208,1,147.32,162.56,5V,sup,,,,"/>
+<approved hash="208,1,165.1,27.94,5V,sup,,,,"/>
+<approved hash="208,1,83.82,154.94,5V,out,,,,"/>
+<approved hash="208,1,83.82,152.4,5V,out,,,,"/>
+<approved hash="208,1,106.68,157.48,5V,sup,,,,"/>
+<approved hash="208,1,73.66,167.64,5V,out,,,,"/>
+<approved hash="208,1,73.66,170.18,5V,out,,,,"/>
+<approved hash="208,1,215.9,76.2,5V,sup,,,,"/>
+<approved hash="208,1,213.36,40.64,5V,sup,,,,"/>
+<approved hash="208,1,17.78,104.14,5V,sup,,,,"/>
+<approved hash="106,1,218.44,147.32,A4_SDA,,,,,"/>
+<approved hash="106,1,218.44,144.78,A5_SCL,,,,,"/>
+<approved hash="106,1,218.44,139.7,A7,,,,,"/>
+<approved hash="106,1,170.18,149.86,AREF,,,,,"/>
+<approved hash="106,1,218.44,129.54,D2,,,,,"/>
+<approved hash="106,1,218.44,124.46,D4,,,,,"/>
+<approved hash="106,1,218.44,121.92,D5,,,,,"/>
+<approved hash="106,1,218.44,119.38,D6,,,,,"/>
+<approved hash="106,1,218.44,116.84,D7,,,,,"/>
+<approved hash="106,1,218.44,111.76,D8,,,,,"/>
+<approved hash="113,1,55.6853,42.5027,JP2,,,,,"/>
+<approved hash="113,1,68.3853,42.5027,JP5,,,,,"/>
+<approved hash="113,1,14.5627,157.675,JP1,,,,,"/>
+<approved hash="113,1,175.455,46.3973,JP3,,,,,"/>
+<approved hash="113,1,30.2853,144.103,JP8,,,,,"/>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
