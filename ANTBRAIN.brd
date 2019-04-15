@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="8.7.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -24,18 +24,18 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="15" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="15" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -1065,7 +1065,7 @@ NS Package M08A</description>
 </element>
 <element name="C8" library="freetronics" package="0603" value="1uF 0603" x="25.5" y="8.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="26.262" y="9.389" size="0.4064" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="25.984" y="8.357" size="0.8128" layer="27" font="vector"/>
+<attribute name="VALUE" x="23.984" y="6.357" size="0.8128" layer="27" font="vector"/>
 </element>
 <element name="SW1" library="freetronics-jon" package="SPDT-2.5MM" value="SWITCH-SPDTB" x="33.5" y="20" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.9102" y="23.08" size="1.27" layer="25" ratio="10" rot="R270"/>
@@ -1079,7 +1079,7 @@ NS Package M08A</description>
 </element>
 <element name="R2" library="freetronics-jon" package="0603" value="10K" x="9" y="9" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.492" y="8.111" size="0.4064" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="11.516" y="8.9652" size="0.8128" layer="27" font="vector" rot="R180"/>
+<attribute name="VALUE" x="6.484" y="8.0348" size="0.8128" layer="27" font="vector"/>
 </element>
 <element name="R3" library="freetronics-jon" package="0603" value="10K" x="10.5" y="9" smashed="yes" rot="R270">
 <attribute name="NAME" x="11.008" y="9.889" size="0.4064" layer="25" font="vector" rot="R270"/>
@@ -1111,8 +1111,14 @@ NS Package M08A</description>
 <attribute name="NAME" x="8.508" y="30.889" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.484" y="28.0348" size="0.8128" layer="27" font="vector"/>
 </element>
-<element name="C1" library="freetronics-jon" package="0805" value="10uF" x="14" y="4"/>
-<element name="C7" library="freetronics-jon" package="0805" value="10uF" x="21" y="4" rot="R180"/>
+<element name="C1" library="freetronics-jon" package="0805" value="10uF" x="14" y="4" smashed="yes">
+<attribute name="NAME" x="13.238" y="4.8255" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="12.484" y="4.603" size="0.8128" layer="27"/>
+</element>
+<element name="C7" library="freetronics-jon" package="0805" value="10uF" x="21" y="4" smashed="yes" rot="R180">
+<attribute name="NAME" x="21.762" y="3.1745" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="19.484" y="4.603" size="0.8128" layer="27"/>
+</element>
 <element name="REG1" library="freetronics" package="SOT89" value="LD1117-SOT89" x="30" y="8" rot="R180"/>
 </elements>
 <signals>
@@ -1686,43 +1692,9 @@ NS Package M08A</description>
 <errors>
 <approved hash="19,1,7151c983b1910943"/>
 <approved hash="19,1,865c85af50f43fba"/>
-<approved hash="19,1,b6dda045d283c2cd"/>
-<approved hash="19,1,d4c14ec3b5aa4b3d"/>
-<approved hash="19,1,63f162a336a737f5"/>
-<approved hash="19,1,9854f733e6464edd"/>
-<approved hash="19,1,9c389cb7d349d3c6"/>
-<approved hash="19,1,98ba9823d7ddd744"/>
-<approved hash="19,1,9dd8929bdd65d226"/>
-<approved hash="19,1,80d680b7cf49cf28"/>
-<approved hash="19,1,9cf09cf7d309d30e"/>
-<approved hash="19,1,f4c5f4ca9134913b"/>
-<approved hash="19,1,68f968f62f082f07"/>
-<approved hash="19,1,28e728eb89158919"/>
-<approved hash="19,1,8bbd8ae7dee3dfb9"/>
-<approved hash="19,1,74f874f66b086b06"/>
-<approved hash="19,1,658f144d69202f13"/>
-<approved hash="19,1,c22292366bedac0f"/>
 <approved hash="19,1,50fea0409ecfa88d"/>
 <approved hash="19,1,f78e15f0c3ca218c"/>
 <approved hash="19,1,5cd9b41b3b9065a8"/>
-<approved hash="19,1,cf88c9c903c30582"/>
-<approved hash="19,16,6255629d36993651"/>
-<approved hash="19,16,50e5513d053904e1"/>
-<approved hash="19,16,40a14121152514a5"/>
-<approved hash="19,16,526152c106c50665"/>
-<approved hash="19,16,1513156a996e9917"/>
-<approved hash="19,16,b920b9585d5c5d24"/>
-<approved hash="19,16,193f19475d435d3b"/>
-<approved hash="19,16,4d3f4d46f142f13b"/>
-<approved hash="19,16,9c389cb7d349d3c6"/>
-<approved hash="19,16,98ba9823d7ddd744"/>
-<approved hash="19,16,9dd8929bdd65d226"/>
-<approved hash="19,16,80d680b7cf49cf28"/>
-<approved hash="19,16,9cf09cf7d309d30e"/>
-<approved hash="19,16,f4c5f4ca9134913b"/>
-<approved hash="19,16,68f968f62f082f07"/>
-<approved hash="19,16,28e728eb89158919"/>
-<approved hash="19,16,74f874f66b086b06"/>
 </errors>
 </board>
 </drawing>
